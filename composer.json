@@ -3,7 +3,9 @@
     "type": "project",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "ramsey/uuid": "^3.5.2"
+    },
     "require-dev": {
         "phpspec/phpspec": "^3.1.1"
     },
@@ -14,7 +16,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "spec\\": "spec"
+            "spec\\": "spec",
+            "Feature\\": "tests/Feature"
         }
     },
     "config": {
